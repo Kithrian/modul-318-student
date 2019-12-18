@@ -37,6 +37,6 @@ namespace SwissTransport
     public class Stop
     {
         [JsonProperty("departure")]
-        public DateTime Departure { get; set; }
+        public DateTime? Departure { get; set; }
     }
 }
