@@ -60,7 +60,12 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <WebBrowser x:Name="MyBrowser" Grid.ColumnSpan="11" Grid.Column="13" HorizontalAlignment="Left" Height="485" Grid.Row="1" VerticalAlignment="Top" Width="443" Source="https://bing.com/maps/default.aspx?cp=43.901683~-69.522416&amp;lvl=1&amp;style=r" Grid.RowSpan="23"/>
-        <CheckBox Content="CheckBox" Grid.Column="7" HorizontalAlignment="Left" Height="100" Margin="29,0,0,0" Grid.Row="9" Grid.RowSpan="5" VerticalAlignment="Top"/>
+        <TextBox Grid.ColumnSpan="3" Grid.Column="3" HorizontalAlignment="Left" Height="23" Grid.Row="3" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="139"/>
+        <TextBox Grid.ColumnSpan="3" Grid.Column="3" HorizontalAlignment="Left" Height="23" Grid.Row="5" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="139"/>
+        <DataGrid x:Name="Connections" Grid.ColumnSpan="10" Grid.Column="3" HorizontalAlignment="Left" Grid.Row="10" Grid.RowSpan="14" Width="367"/>
+        <DatePicker Grid.Column="5" HorizontalAlignment="Left" Grid.Row="7" VerticalAlignment="Top" Height="24" Width="139" Grid.ColumnSpan="3"/>
+        <TextBox Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="0,3,0,0" Grid.Row="7" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="63"/>
+        <Button Content="Button" Grid.Column="1" HorizontalAlignment="Left" Height="29" Margin="0,22,0,0" Grid.Row="3" Grid.RowSpan="3" VerticalAlignment="Top" Width="63"/>
     </Grid>
 
 </Window>

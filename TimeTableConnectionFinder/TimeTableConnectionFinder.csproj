@@ -140,6 +140,12 @@
   <ItemGroup>
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\src\SwissTransport\SwissTransport.csproj">
+      <Project>{D0262178-A48F-4DE0-807B-E76B63E39421}</Project>
+      <Name>SwissTransport</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
