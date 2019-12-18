@@ -64,7 +64,7 @@
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
                    FontSize="20" Grid.ColumnSpan="7" Width="231" Grid.Column="1" Height="32" Grid.Row="1" Margin="0,0,10,0" />
-        <WebBrowser x:Name="MyBrowser" Grid.ColumnSpan="17" Grid.Column="5" HorizontalAlignment="Left" Height="312" Grid.Row="3" VerticalAlignment="Top" Width="551" Source="https://www.google.ch/maps/place/Schweiz/@46.7911674,5.975811,7z/data=!3m1!4b1!4m5!3m4!1s0x478c64ef6f596d61:0x5c56b5110fcb7b15!8m2!3d46.818188!4d8.227512" Grid.RowSpan="17"/>
+        <WebBrowser x:Name="MyBrowser" Grid.ColumnSpan="19" Grid.Column="3" HorizontalAlignment="Left" Height="333" Grid.Row="3" VerticalAlignment="Top" Width="584" Source="https://www.google.ch/maps/place/Schweiz/@46.7911674,5.975811,7z/data=!3m1!4b1!4m5!3m4!1s0x478c64ef6f596d61:0x5c56b5110fcb7b15!8m2!3d46.818188!4d8.227512" Grid.RowSpan="17" Margin="30,0,0,0"/>
     </Grid>
 
 </Window>
