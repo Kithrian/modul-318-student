@@ -74,10 +74,58 @@
             </DataGrid.Columns>
         </DataGrid>
         <DatePicker x:Name="TravelDate" Grid.Column="5" HorizontalAlignment="Left" Grid.Row="7" VerticalAlignment="Top" Height="24" Width="139" Grid.ColumnSpan="3"/>
-        <DatePickerTextBox Grid.ColumnSpan="11" Margin="10,1,4,31" Grid.RowSpan="3" Grid.Column="3" Grid.Row="3"></DatePickerTextBox>
         <TextBox x:Name="TravelTime" Grid.Column="1" HorizontalAlignment="Left" Height="24" Grid.Row="7" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Grid.ColumnSpan="3"/>
         <Button Content="Exchange" Grid.Column="1" HorizontalAlignment="Left" Height="29" Margin="0,22,0,0" Grid.Row="3" Grid.RowSpan="3" VerticalAlignment="Top" Width="63"/>
         <Button x:Name="GetConnections" Grid.ColumnSpan="3" Content="Suchen" Grid.Column="16" HorizontalAlignment="Left" Margin="10,2,0,0" Grid.Row="23" VerticalAlignment="Top" Width="75"/>
+        <TabControl HorizontalAlignment="Left" Width="669" Grid.ColumnSpan="18" Grid.RowSpan="24">
+
+            <TabItem Header="Verbindungen">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="1*"/>
+
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Nahe Stationen">
+
+            </TabItem>
+            <TabItem Header="Verbindung Teilen">
+
+            </TabItem>
+            <TabItem Header="Details" />
+        </TabControl>
+
     </Grid>
 
 </Window>

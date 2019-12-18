@@ -105,7 +105,7 @@ namespace TimeTableConnectionFinder {
             {
                 MessageBox.Show("Invalid timeformat expect HH:mm for example 16:15");
             }
-            var connection = TransportApi.GetConnections("Kriens, Alpenstrasse", "Luzern, Unterlöchli", TravelDate, travelTime);
+            var connection = TransportApi.GetConnections(Origin, Destination, TravelDate, travelTime);
             Connections = new ObservableCollection<Connection>(connection.ConnectionList);
         }
 
