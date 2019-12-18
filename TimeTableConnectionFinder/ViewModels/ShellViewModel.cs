@@ -9,14 +9,40 @@ namespace TimeTableConnectionFinder {
     {
         public ShellViewModel()
         {
+            //Code for testing purposes
             TravelDate = DateTime.Now;
             TravelTime = DateTime.Now.ToString("HH:mm");
             DateTime travelTime = DateTime.ParseExact(TravelTime,"HH:mm", CultureInfo.InvariantCulture);
-            Transport TransportApi = new Transport();
-            var connection = TransportApi.GetConnections("Kriens, Alpenstrasse", "Luzern, Unterlöchli", TravelDate, travelTime);
+            /*var connection = TransportApi.GetConnections("Kriens, Alpenstrasse", "Luzern, Unterlöchli", TravelDate, travelTime);
             Connections = new ObservableCollection<Connection>(connection.ConnectionList);
+            Origin = "Test";
+            Destination = "Test2";*/
         }
 
+        Transport TransportApi = new Transport();
+
+        
+        public void Exchange()
+        {
+            String Temp = Origin;
+            Origin = Destination;
+            Destination = Temp;
+        }
+
+        public void GetStationBoard()
+        {
+            var Response = TransportApi.GetStationBoard(SelectedStation);
+            StationBoard = new ObservableCollection<StationBoard>(Response.Entries);
+            StationBoard2 = Response.Station;
+
+        }
+
+        public void GetStations()
+        {
+            var Response = TransportApi.GetStations("Kriens, Alpenstrass");
+            Stations = new ObservableCollection<Station>(Response.StationList);
+            //StationBoard2 = Response.Station;
+        }
         private Coordinate _browserOriginCoordinate;
 
         public Coordinate BrowserCoordinate
@@ -31,6 +57,18 @@ namespace TimeTableConnectionFinder {
         {
             get { return _browserDestinationCoordinate; }
             set { _browserDestinationCoordinate = value; }
+        }
+
+        private Station _stationBoard2;
+
+        public Station StationBoard2
+        {
+            get { return _stationBoard2; }
+            set
+            {
+                _stationBoard2 = value;
+                NotifyOfPropertyChange(() => StationBoard2);
+            }
         }
 
 
@@ -85,7 +123,19 @@ namespace TimeTableConnectionFinder {
 
 
 
-        private ObservableCollection<Connection> _connections =  new ObservableCollection<Connection>();
+        private ObservableCollection<Station> _stations =  new ObservableCollection<Station>();
+
+        public ObservableCollection<Station> Stations
+        {
+            get { return _stations; }
+            set
+            {
+                _stations = value;
+                NotifyOfPropertyChange(() => Stations);
+            }
+        }
+
+        private ObservableCollection<Connection> _connections = new ObservableCollection<Connection>();
 
         public ObservableCollection<Connection> Connections
         {
@@ -94,6 +144,19 @@ namespace TimeTableConnectionFinder {
             {
                 _connections = value;
                 NotifyOfPropertyChange(() => Connections);
+            }
+        }
+
+
+        private ObservableCollection<StationBoard> _stationBoard = new ObservableCollection<StationBoard>();
+
+        public ObservableCollection<StationBoard> StationBoard
+        {
+            get { return _stationBoard; }
+            set
+            {
+                _stationBoard = value;
+                NotifyOfPropertyChange(() => StationBoard);
             }
         }
 
@@ -109,11 +172,17 @@ namespace TimeTableConnectionFinder {
             Connections = new ObservableCollection<Connection>(connection.ConnectionList);
         }
 
+        private string _selectedStation;
 
-
-
-
-
+        public string SelectedStation
+        {
+            get { return _selectedStation; }
+            set
+            {
+                _selectedStation = value;
+                NotifyOfPropertyChange(() => SelectedStation);
+            }
+        }
 
     }
 }
