@@ -9,7 +9,7 @@ namespace TimeTableConnectionFinder {
         public AppBootstrapper() {
             Initialize();
         }
-
+        /*
         protected override void Configure() {
             container = new SimpleContainer();
 
@@ -29,9 +29,9 @@ namespace TimeTableConnectionFinder {
         protected override void BuildUp(object instance) {
             container.BuildUp(instance);
         }
-
+        */
         protected override void OnStartup(object sender, System.Windows.StartupEventArgs e) {
-            DisplayRootViewFor<IShell>();
+            DisplayRootViewFor<ShellViewModel>();
         }
     }
 }
