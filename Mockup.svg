@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(143 29)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="257" height="53" stroke="none"/>
+      <rect x="0.5" y="0.5" width="256" height="52" fill="none"/>
+    </g>
+    <text id="Start_Station" data-name="Start Station" transform="translate(157 64)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI" opacity="0.5"><tspan x="0" y="0">Start Station</tspan></text>
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(140 110)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="260" height="53" stroke="none"/>
+      <rect x="0.5" y="0.5" width="259" height="52" fill="none"/>
+    </g>
+    <text id="Enstation" transform="translate(157 145)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI" opacity="0.5"><tspan x="0" y="0">Enstation</tspan></text>
+    <line id="Line_1" data-name="Line 1" y2="28" transform="translate(86.5 95.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_2" data-name="Line 2" y2="28" transform="translate(62.5 95.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(140 395)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="950" height="604" stroke="none"/>
+      <rect x="0.5" y="0.5" width="949" height="603" fill="none"/>
+    </g>
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(141 395)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="949" height="65" stroke="none"/>
+      <rect x="0.5" y="0.5" width="948" height="64" fill="none"/>
+    </g>
+    <text id="Verbdi" transform="translate(183 428)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Verbdi</tspan></text>
+    <text id="Ihre_Verbindungen" data-name="Ihre Verbindungen" transform="translate(140 341)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Ihre Verbindungen</tspan></text>
+    <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(1112 395)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="668" height="604" stroke="none"/>
+      <rect x="0.5" y="0.5" width="667" height="603" fill="none"/>
+    </g>
+    <text id="Google_Maps" data-name="Google Maps" transform="translate(1106 325)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Google Maps</tspan></text>
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(140 206)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="260" height="40" stroke="none"/>
+      <rect x="0.5" y="0.5" width="259" height="39" fill="none"/>
+    </g>
+    <text id="Time_Date" data-name="Time Date" transform="translate(156 206)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">Time Date</tspan></text>
+    <g id="Polygon_1" data-name="Polygon 1" transform="translate(56 94)" fill="#fff">
+      <path d="M 11.06573677062988 8.5 L 0.9342633485794067 8.5 L 6 0.9013950228691101 L 11.06573677062988 8.5 Z" stroke="none"/>
+      <path d="M 6 1.802774906158447 L 1.86851692199707 8 L 10.13148307800293 8 L 6 1.802774906158447 M 6 0 L 12 9 L 0 9 L 6 0 Z" stroke="none" fill="#707070"/>
+    </g>
+  </g>
+</svg>
